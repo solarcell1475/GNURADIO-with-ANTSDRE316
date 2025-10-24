@@ -1,0 +1,11 @@
+TASK:1.1:Setup framework - Initialize directory structure and verify dependencies
+TASK:1.2:Configure ANTSDR hardware - Connect E316 via IIO and validate basic functionality
+TASK:1.3:Run frequency sweep test - Test 400-500 MHz range in 2 MHz steps
+TASK:2.1:Generate flowgraph:SFCW 400–500MHz - Create GNU Radio Python flowgraph
+TASK:2.2:Confirm TX/RX calibration - Validate signal chain with loopback test
+TASK:3.1:Launch dashboard:streamlit run src/dashboard/gpr_dashboard.py - Start real-time visualization
+TASK:3.2:Acquire field dataset - Collect GPR data with known calibration targets
+TASK:4.0:Analyze B-scan - Process IQ data into radargrams and detect targets
+TASK:5.0:Calibration validation (0.5m,1m,2m) - Run compliance tests with buried targets
+TASK:6.0:Generate compliance report - Create ASTM D6432 documentation and final report
+

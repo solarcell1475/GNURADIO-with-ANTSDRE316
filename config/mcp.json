@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "gr-mcp": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/gr-mcp",
+        "run",
+        "main.py"
+      ],
+      "description": "GNU Radio MCP Server for flowgraph generation and control"
+    },
+    "filesystem": {
+      "command": "mcp-server-filesystem",
+      "args": [
+        "/Users/solarcell1474/GNURADIO"
+      ],
+      "description": "Filesystem access for GPR project directory"
+    }
+  },
+  "globalShortcut": "Cmd+Shift+.",
+  "permissions": {
+    "gr-mcp": {
+      "filesystem": ["read", "write"],
+      "network": ["localhost"]
+    },
+    "filesystem": {
+      "filesystem": ["read", "write"]
+    }
+  }
+}
+
